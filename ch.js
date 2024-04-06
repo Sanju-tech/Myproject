@@ -3676,9 +3676,7 @@
     return function(e, o) {
         if (o = o || {}, !e) throw Error("BotUI: Container id is required as first argument.");
         if (!document.getElementById(e)) {
-            var a = document.createElement("div")
-            a.innerHTML = '<div id=chat-circle class="btn btn-raised"></div><div id=chat-overlay></div></div><div class=chat-box> <div class=chat-box-header> <div class=chat-header-dp></div><div class=chat-header-name>Simran Khanna</div><span class=chat-box-toggle><i class=material-icons>close</i></span> </div><div class=chat-box-body> <div class=chat-box-overlay> </div><div class=chat-logs> <div id=mls-chat-bot> ~<~bot-ui></bot-ui> </div></div></div></div>'
-            document.querySelector("body").appendChild(a)
+            throw Error("BotUI: Element with id #"+e+" does not exist.");
         }
         if (!t.Vue && !o.vue) throw Error("BotUI: Vue is required but not found.");
         var n, i, s, a = {
