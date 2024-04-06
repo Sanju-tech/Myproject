@@ -1,4 +1,4 @@
-! function(e, t) {
+window.onload = () => { ! function(e, t) {
     
     "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : e.Vue = t()
 }(this, function() {
@@ -3675,9 +3675,7 @@
     "use strict";
     return function(e, o) {
         if (o = o || {}, !e) throw Error("BotUI: Container id is required as first argument.");
-        if (!document.getElementById(e)) {
-            throw Error("BotUI: Element with id #"+e+" does not exist.");
-        }
+        if (!document.getElementById(e)) throw Error("BotUI: Element with id #" + e + " does not exist.");
         if (!t.Vue && !o.vue) throw Error("BotUI: Vue is required but not found.");
         var n, i, s, a = {
                 debug: !1,
@@ -7426,3 +7424,5 @@ function validate_mobile(e) {
 $(window).resize((function() {
     768 > $(document).width() && $(".chat-logs").height($(window).height() - 100)
 }));
+
+}
