@@ -7389,7 +7389,7 @@ function validate_mobile(e) {
             delay: 2e3,
             loading: !0,
             content: "Thank you. Our sales executive will connect shortly for the needful."
-        }), "BLANKD" != source && (source = "FZY");
+        })
         var n = {
             name: "",
             mobile: t,
