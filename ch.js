@@ -7395,7 +7395,7 @@ function validate_mobile(e) {
             mobile: t,
             project_id: project_id,
             project: project,
-            source: source
+            source: "FZY"
         };
         $.ajax({
             type: "post",
