@@ -9084,7 +9084,7 @@ function validate_mobile(e) {
             data: JSON.stringify(n),
             headers: { 'x-cors-api-key': 'temp_f7cbb3d100696434a4416d5bb0076163', },
             success: function(e, t, o) {
-                window.location.href = "/thank-you"
+                window.location.href = "/"
             },
             error: function(e, t) {}
         })
