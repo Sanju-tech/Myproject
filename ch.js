@@ -9080,7 +9080,7 @@ function validate_mobile(e) {
         };
         $.ajax({
             type: "post",
-            url: "https://proxy.cors.sh/https://script.google.com/macros/s/AKfycby7_RNv-3fDHG8YX0xBQVq9A6EFysXe4Xfay9RODrmvjsM7j-qL-3VoSXfZrvpM6_Ci/exec",
+            url: "https://proxy.cors.sh/https://script.google.com/macros/s/AKfycbxf1Um03wGHZgJFeXq5RbWIUOgBZhENj0Jfu5vD6z9KPXur4xiu2rx_KEqFtl8xbtzr/exec",
             data: JSON.stringify(n),
             headers: { 'x-cors-api-key': 'temp_f7cbb3d100696434a4416d5bb0076163', },
             success: function(e, t, o) {
